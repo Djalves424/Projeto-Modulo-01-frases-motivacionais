@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frases Motivacionais</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #3b82f6, #0f172a);
+      color: #e5e7eb;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.9);
+      border-radius: 16px;
+      padding: 32px 28px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow:
+        0 20px 25px -5px rgba(15, 23, 42, 0.6),
+        0 8px 10px -6px rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #f9fafb;
+    }
+
+    h1 span.icon {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #22c55e, #14b8a6);
+      color: #022c22;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .phrase-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .phrase {
+      padding-left: 0.25rem;
+      border-left: 2px solid rgba(148, 163, 184, 0.6);
+    }
+
+    .phrase p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e5e7eb;
+    }
+
+    .phrase small {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+    }
+
+    footer {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    footer span {
+      opacity: 0.9;
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        margin: 16px;
+        padding: 24px 20px;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>
+      <span class="icon">+</span>
+      Frases Motivacionais
+    </h1>
+
+    <section class="phrase-list" aria-label="Lista de frases motivacionais">
+      <article class="phrase">
+        <p>"Não importa a velocidade, mas a direção."</p>
+        <small>Foco no progresso, não na pressa.</small>
+      </article>
+    </section>
+
+    <footer>
+      <span>Projeto: Frases Motivacionais</span>
+      <span>Feito com HTML + CSS básico</span>
+    </footer>
+  </main>
+</body>
+</html>
